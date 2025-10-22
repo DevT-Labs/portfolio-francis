@@ -1,0 +1,248 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0e1117;
+  color: #e0e0e0;
+  line-height: 1.6;
+  background-image: radial-gradient(#1f2733 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+a {
+  color: #4ea8de;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1a1f2b;
+  padding: 1rem 2rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar li a {
+  color: #fff;
+  font-weight: 600;
+}
+.resume {
+  background-color: green;
+  position: absolute;
+  right: 18rem;
+  top: 0.5rem;
+  border-radius: 8px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+/* About Section */
+.about {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  max-width: 800px;
+}
+
+.about-img-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #4ea8de;
+}
+
+.main-para {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4ea8de;
+}
+
+.sub-para {
+  font-size: 1rem;
+  color: #c9c9c9;
+  max-width: 600px;
+}
+
+/* Services Section */
+.services {
+  background-color: #12161f;
+}
+.services h2,
+h3 {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.services h2 a {
+  text-decoration: none;
+}
+.container-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.container-services > div {
+  background-color: #1f2733;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.container-services > div:hover {
+  transform: translateY(-5px);
+}
+
+.container-img-services img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.container-services p {
+  font-size: 0.95rem;
+  color: #d0d0d0;
+}
+
+/* Contact Section */
+#contact {
+  padding: 4rem 2rem;
+  background-color: #0e1117;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #4ea8de;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: 600;
+  color: #ccc;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #1f2733;
+  color: #fff;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #4ea8de;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #4ea8de;
+  color: #0e1117;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #388ec6;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1f2b;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #333;
+}
+
+.footer-container {
+  margin-bottom: 1rem;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+.footer-social a {
+  color: #4ea8de;
+  margin: 0 0.5rem;
+  font-weight: 600;
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
+  max-width: 100%;
+  background-color: aqua;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

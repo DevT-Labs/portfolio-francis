@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <button id="resume" class="resume">Download CV</button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="Home" class="about">
+        <div class="about-profile">
+          <div class="about-img-container">
+            <img src="./res/images/profile.webp" alt="Profile" />
+          </div>
+          <div class="about-me">
+            <p class="main-para">Network Engineer</p>
+            <p class="sub-para">
+              I'm a passionate Network Engineer with a strong foundation in
+              networking principles, routing, switching, and network security.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <h2><a href="services">Services</a></h2>
+        <div id="services" class="container-services">
+          <div class="technologies">
+            <h3>Network Technologies</h3>
+            <div class="container-img-services">
+              <img
+                src="./res/images/networking.webp"
+                alt="Networking Technologies"
+              />
+            </div>
+            <p>
+              Skilled in configuring, managing, and troubleshooting Cisco,
+              Mikrotik, and Huawei devices, with a strong focus on optimizing
+              network reliability, security, and performance across LAN/WAN
+              environments.
+            </p>
+          </div>
+          <div class="scripting">
+            <h3>Automation & Scripting</h3>
+            <div class="container-img-services">
+              <img
+                src="./res/images/scripting.webp"
+                alt="Automation and Scripting"
+              />
+            </div>
+            <p>
+              Automates network configuration and monitoring processes using
+              Python, Netmiko, and SolarWinds, creating custom automation
+              scripts to improve operational efficiency and reduce manual
+              workloads
+            </p>
+          </div>
+          <div class="wireless">
+            <h3>Wireless LANs & Hotpsots</h3>
+            <div class="container-img-services">
+              <img src="./res/images/wireless.webp" alt="Wireless" />
+            </div>
+            <p>
+              Deploys and manages wireless LAN and hotspot infrastructures with
+              integrated billing systems, enabling secure user access, efficient
+              bandwidth management, and automated payment processing.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- contact.html -->
+      <section id="contact">
+        <h2><a href="contact">Let's Connect</a></h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <!-- footer.html -->
+    <footer>
+      <div class="footer-social">
+        <div>
+          <img class="icon" src="./res/images/social.png" alt="Github" />
+          <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        </div>
+        <div>
+          <img class="icon" src="./res/images/business.png" alt="Github" />
+          <a href="https://linkedin.com/in/yourusername" target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+        <div>
+          <img class="icon" src="./res/images/email.png" alt="Github" />
+          <a href="https://gmail.com" target="_blank">Email</a>
+        </div>
+      </div>
+      <div class="footer-container">
+        <p>&copy; 2025 DevT Labs</p>
+      </div>
+    </footer>
+  </body>
+</html>
